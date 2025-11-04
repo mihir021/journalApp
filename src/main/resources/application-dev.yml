@@ -1,0 +1,33 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${SPRING_MAIL_USERNAME}
+    password: ${SPRING_MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+      database: journaldb
+      auto-index-creation: true
+
+weather:
+  api:
+    key: ${WEATHER_API_KEY}
+jwt:
+  secret:
+    key: ${JWT_SECRET_KEY}
+server:
+  port: 8080
+
+logging:
+  level:
+    net.mihir.journalApp: DEBUG
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    org.mongodb.driver: INFO

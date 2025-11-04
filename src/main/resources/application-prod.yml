@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://mihir:3EROl1lEpcDj3e1g@cluster0.tgufrvb.mongodb.net/journaldb?retryWrites=true&w=majority
+      database: journaldb
+      auto-index-creation: true
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    org.mongodb.driver: INFO
