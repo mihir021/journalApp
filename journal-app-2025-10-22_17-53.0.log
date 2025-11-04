@@ -1,3 +1,0 @@
-2025-10-22 17:53:59 [main] INFO  n.m.journalApp.journalApplication - Starting journalApplication using Java 17.0.14 with PID 18004 (D:\JAVA\journalApp\target\classes started by Admin in D:\JAVA\journalApp)
-2025-10-22 17:53:59 [main] DEBUG n.m.journalApp.journalApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-22 17:53:59 [main] INFO  n.m.journalApp.journalApplication - The following 1 profile is active: "dev"

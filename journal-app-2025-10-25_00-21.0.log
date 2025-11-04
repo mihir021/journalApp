@@ -1,1 +1,0 @@
-2025-10-25 00:21:02 [http-nio-8080-exec-3] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "userName" : "test1"} fields: Document{{}} sort: null for class: class net.mihir.journalApp.entity.User in collection: users
