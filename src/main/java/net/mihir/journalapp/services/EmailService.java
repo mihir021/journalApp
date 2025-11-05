@@ -1,7 +1,6 @@
 package net.mihir.journalapp.services;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -10,11 +9,16 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class EmailService {
 
-    @Autowired
-    private JavaMailSender javaMailSender;
+    // 1. Removed @Autowired and made the field final
+    private final JavaMailSender javaMailSender;
 
-    public void sendEmail(String to ,String subject , String body){
-        try{
+    // 2. Added a constructor for Spring to inject the bean
+    public EmailService(JavaMailSender javaMailSender) {
+        this.javaMailSender = javaMailSender;
+    }
+
+    public void sendEmail(String to, String subject, String body) {
+        try {
             SimpleMailMessage msg = new SimpleMailMessage();
             msg.setTo(to);
             msg.setSubject(subject);
@@ -22,7 +26,7 @@ public class EmailService {
 
             javaMailSender.send(msg);
         } catch (Exception e) {
-            log.error("error in gmail : ",e);
+            log.error("error in gmail : ", e);
         }
     }
 
