@@ -6,22 +6,3 @@ spring:
   profiles:
     active: dev
 
-#spring:
-#  data:
-#    mongodb:
-#      uri: mongodb+srv://mihir:3EROl1lEpcDj3e1g@cluster0.tgufrvb.mongodb.net/journaldb?retryWrites=true&w=majority
-#      database: journaldb
-#      auto-index-creation: true
-#
-#  profiles:
-#    active: default
-#
-#server:
-#  port: 8080
-#
-#logging:
-#  level:
-#    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
-#    org.mongodb.driver: INFO
-
-# or by direct from IntelliJ

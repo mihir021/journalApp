@@ -28,7 +28,7 @@ class EmailServiceTest {
     @Test
     void sendEmailTest() {
         // --- Arrange ---
-        String to = "shinchan021021@gmail.com";
+        String to = "rathodmihir1113@gmail.com";
         String subject = "java mail";
         String body = "hi mail send completed";
 
